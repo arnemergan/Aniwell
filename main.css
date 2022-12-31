@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand";
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.materiaal img {
+  border-radius: 50%;
+}
+
+.diensten {
+  background-color: #f7faff;
+}
+
+.praktijk {
+  background-color: #f2f2f2;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  background-color: #006bff;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  min-width: 170px;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: #0055cc;
+}
+
+nav {
+  z-index: 1000;
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 75px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+}
+
+nav .title {
+  font-size: 25px;
+  color: #006bff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #000000 !important;
+  letter-spacing: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 12px;
+}
+
+nav ul li a:hover {
+  color: #006bff !important;
+}
+
+.sticky {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
