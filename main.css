@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
 body {
   font-family: "Quicksand";
   font-size: 16px;
@@ -15,12 +20,20 @@ section {
   padding-bottom: 20px;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 h3 {
-  font-size: 26px;
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .card {
@@ -31,6 +44,80 @@ h5 {
   padding: unset;
 }
 
+button {
+  border: none;
+  border-radius: 25px;
+  background-color: #006bff;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  min-width: 170px;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: #0055cc;
+}
+
+nav {
+  z-index: 1000;
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 8vh;
+  padding-top: 17px;
+  padding-bottom: 13px;
+}
+
+nav .title {
+  font-size: 40px;
+  color: #006bff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li:nth-child(4) {
+  padding-right: 14px;
+}
+
+nav ul li a {
+  color: #000000 !important;
+  letter-spacing: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 12px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #006bff !important;
+}
+
+nav ul li a .active {
+  color: #006bff !important;
+}
+
+.sticky {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 .materiaal img {
   border-radius: 50%;
 }
@@ -38,7 +125,7 @@ h5 {
 .diensten {
   background-color: #f7faff;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 
@@ -88,67 +175,54 @@ h5 {
   background-color: #f2f2f2;
 }
 
-button {
-  border: none;
-  border-radius: 25px;
-  background-color: #006bff;
-  font-weight: 600;
-  font-size: 16px;
-  color: #ffffff;
-  min-width: 170px;
-  padding: 8px;
+.front {
+  min-height: 62vh;
+  text-align: center;
 }
 
-button:hover {
-  background-color: #0055cc;
-}
-
-nav {
-  z-index: 1000;
-  background-color: #ffffff;
-  overflow: hidden;
-  height: 75px;
-  padding-top: 17px;
-  padding-bottom: 13px;
-}
-
-nav .title {
-  font-size: 25px;
+.front h1 {
   color: #006bff;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 3px;
 }
 
-nav ul {
-  list-style: none;
-  float: right;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: #000000 !important;
-  letter-spacing: 0px;
-  cursor: pointer;
-  font-weight: bold;
+.front p {
+  text-align: justify;
   font-size: 17px;
-  padding-right: 12px;
 }
 
-nav ul li a:hover {
-  color: #006bff !important;
+.front .col-md-6,
+.col-md-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 62vh;
 }
 
-.sticky {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  width: 100%;
+.front button {
+  min-width: 250px;
 }
 
-.sticky + .content {
-  padding-top: 60px;
+.front img {
+  width: 580px;
+  height: 500px;
+}
+
+.info {
+  text-align: center;
+  padding: 0;
+}
+
+.info .col-md-4 {
+  background-color: #f2f2f2;
+  color: #0a2054;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .col-md-4:nth-child(1) {
+  background-color: #0a2054;
+  color: #ffffff;
 }
