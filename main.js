@@ -15,10 +15,11 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll("nav a").forEach((link) => {
-  if (link.href.includes(`${activePage}`)) {
-    link.classList.add("active");
-    console.log(link);
-  }
+document.querySelectorAll("a").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    document.querySelectorAll("a").forEach((i) => {
+      i.classList.remove("active");
+    });
+    item.classList.add("active");
+  });
 });
