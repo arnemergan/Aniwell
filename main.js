@@ -23,3 +23,9 @@ document.querySelectorAll("a").forEach((item) => {
     item.classList.add("active");
   });
 });
+
+$(document).ready(function () {
+  $(".first-button").on("click", function () {
+    $(".animated-icon1").toggleClass("open");
+  });
+});
